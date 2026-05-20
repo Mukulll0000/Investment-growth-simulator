@@ -1,0 +1,35 @@
+Initial_Investment = 1000  #in euros 
+Capitalization_goal = 2000  #in euros
+Annual_interest_rate = 0.04  #4% per year
+
+#question 1: How many years are we talking about to hit that target?
+Years = 0
+while Initial_Investment < Capitalization_goal:
+    Initial_Investment = Initial_Investment * (1 + Annual_interest_rate)
+    Years += 1
+print("It will take", Years, "years to reach the capitalization goal at the given interest rate of 4% per year.")
+
+
+#question 2: Tinker with the annual interest rate and observe how it shifts the timeline.
+Annual_interest_rate = 0.07  #7% per year
+Initial_Investment = 1000
+investment = Initial_Investment
+year = 0
+while investment < Capitalization_goal:
+    investment = investment * (1 + Annual_interest_rate)
+    year += 1
+print("It will take", year, "years to reach the capitalization goal at the given interest rate of 7% per year.")
+
+
+# question 3: Throw in a for loop to experiment with a range of annual interest rates 
+for rate in range(2, 9): # from 2% to 8%
+    annual_interest_rate = rate / 100  # Convert percentage to decimal
+    investment = 1000
+    Years = 0
+    while investment < Capitalization_goal:
+        investment += investment * annual_interest_rate
+        Years += 1
+        
+    print(f"At a {rate}% annual interest rate, it will take {Years} years to reach the capitalization goal.")
+
+print("This code calculates the number of years required to reach a capitalization goal of 2000 euros starting from an initial investment of 1000 euros, given different annual interest rates. It uses a while loop to simulate the growth of the investment over time and a for loop to iterate through a range of interest rates.")
