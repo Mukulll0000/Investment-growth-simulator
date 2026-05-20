@@ -1,0 +1,10 @@
+It will take 18 years to reach the capitalization goal at the given interest rate of 4% per year.
+It will take 11 years to reach the capitalization goal at the given interest rate of 7% per year.
+At a 2% annual interest rate, it will take 36 years to reach the capitalization goal.
+At a 3% annual interest rate, it will take 24 years to reach the capitalization goal.
+At a 4% annual interest rate, it will take 18 years to reach the capitalization goal.
+At a 5% annual interest rate, it will take 15 years to reach the capitalization goal.
+At a 6% annual interest rate, it will take 12 years to reach the capitalization goal.
+At a 7% annual interest rate, it will take 11 years to reach the capitalization goal.
+At a 8% annual interest rate, it will take 10 years to reach the capitalization goal.
+This code calculates the number of years required to reach a capitalization goal of 2000 euros starting from an initial investment of 1000 euros, given different annual interest rates. It uses a while loop to simulate the growth of the investment over time and a for loop to iterate through a range of interest rates.
